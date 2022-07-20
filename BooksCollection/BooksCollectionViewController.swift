@@ -28,7 +28,6 @@ class BooksCollectionViewController: UICollectionViewController {
         layout.minimumInteritemSpacing = spacing
         collectionView.collectionViewLayout = layout
      
-       
     }
 
     //아이템을 몇개 만들 것인지 설정하는 함수
