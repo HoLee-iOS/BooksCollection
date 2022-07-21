@@ -17,6 +17,13 @@ class BooksCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //네비게이션 타이틀 추가
+        navigationItem.title = ("책장")
+        
+        //네비게이션 아이템 추가
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "magnifyingglass"), style: .plain, target: self, action: #selector(searchButtonClicked))
+        
+        
         //컬렉션뷰의 속성 설정
         let layout = UICollectionViewFlowLayout()
         let spacing: CGFloat = 8
@@ -28,6 +35,29 @@ class BooksCollectionViewController: UICollectionViewController {
         layout.minimumInteritemSpacing = spacing
         collectionView.collectionViewLayout = layout
      
+    }
+    
+    //검색버튼 클릭하면 동작하는 함수
+    @objc func searchButtonClicked() {
+    
+        //스토리보드 가져오기
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        
+        //스토리보드 내에 뷰컨 가져오기
+        let vc = sb.instantiateViewController(withIdentifier: SearchViewController.identifier
+        ) as! SearchViewController
+        
+        //네비게이션 컨트롤러 임베드
+        //검색창 내부에서 네비게이션 아이템을 사용할 것이기 때문에 임베드 해주는 것임
+        let nav = UINavigationController(rootViewController: vc)
+        
+        //뷰컨 present 시 스타일 설정
+        //네비게이션으로 임베드 해줬으므로 네비게이션 객체에 설정해줘야함
+        nav.modalPresentationStyle = .fullScreen
+        
+        //네비게이션의 속성을 사용하지만 네비게이션의 push-pop 구조로 넘기지 않고 present로 화면 전환 구현
+        self.present(nav, animated: true)
+        
     }
 
     //아이템을 몇개 만들 것인지 설정하는 함수
@@ -47,8 +77,19 @@ class BooksCollectionViewController: UICollectionViewController {
         cell.backgroundColor = colors.randomElement()!
         
         return cell
+    }
+    
+    @IBAction func detailButtonClicked(_ sender: UIButton) {
         
+        //1. 스토리보드 파일 가져오기
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        //2. 스토리보드 내에 뷰컨트롤러 가져오기
+        let vc = sb.instantiateViewController(withIdentifier: DetailPageViewController.identifier
+        ) as! DetailPageViewController
+        //3. 네비게이션의 푸쉬하는 방식으로 다음 화면 연결
+        self.navigationController?.pushViewController(vc, animated: true)
         
     }
+    
     
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C12E95C7288921F000AD1417 /* DetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E95C6288921F000AD1417 /* DetailPageViewController.swift */; };
+		C12E95C92889286D00AD1417 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E95C82889286D00AD1417 /* SearchViewController.swift */; };
 		C1C31CF12887F19A00912C94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C31CF02887F19A00912C94 /* AppDelegate.swift */; };
 		C1C31CF32887F19A00912C94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C31CF22887F19A00912C94 /* SceneDelegate.swift */; };
 		C1C31CF52887F19A00912C94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C31CF42887F19A00912C94 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C12E95C6288921F000AD1417 /* DetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewController.swift; sourceTree = "<group>"; };
+		C12E95C82889286D00AD1417 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C1C31CED2887F19A00912C94 /* BooksCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BooksCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1C31CF02887F19A00912C94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1C31CF22887F19A00912C94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 				C1C31CF22887F19A00912C94 /* SceneDelegate.swift */,
 				C1C31CF42887F19A00912C94 /* ViewController.swift */,
 				C1C31CF62887F19A00912C94 /* Main.storyboard */,
+				C12E95C82889286D00AD1417 /* SearchViewController.swift */,
+				C12E95C6288921F000AD1417 /* DetailPageViewController.swift */,
 				C1C31D062887F48700912C94 /* BooksCollectionViewController.swift */,
 				C1C31D042887F45D00912C94 /* BooksCollectionViewCell.swift */,
 				C1C31D082887F87700912C94 /* BookInfo.swift */,
@@ -150,8 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C12E95C7288921F000AD1417 /* DetailPageViewController.swift in Sources */,
 				C1C31CF52887F19A00912C94 /* ViewController.swift in Sources */,
 				C1C31D052887F45D00912C94 /* BooksCollectionViewCell.swift in Sources */,
+				C12E95C92889286D00AD1417 /* SearchViewController.swift in Sources */,
 				C1C31D0B2887F94200912C94 /* Book.swift in Sources */,
 				C1C31CF12887F19A00912C94 /* AppDelegate.swift in Sources */,
 				C1C31D072887F48700912C94 /* BooksCollectionViewController.swift in Sources */,
