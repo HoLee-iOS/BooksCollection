@@ -19,6 +19,7 @@
 		C1C31D072887F48700912C94 /* BooksCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C31D062887F48700912C94 /* BooksCollectionViewController.swift */; };
 		C1C31D092887F87700912C94 /* BookInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C31D082887F87700912C94 /* BookInfo.swift */; };
 		C1C31D0B2887F94200912C94 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C31D0A2887F94200912C94 /* Book.swift */; };
+		C1DD4C63288980A000FAA9BF /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DD4C62288980A000FAA9BF /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		C1C31D062887F48700912C94 /* BooksCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksCollectionViewController.swift; sourceTree = "<group>"; };
 		C1C31D082887F87700912C94 /* BookInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookInfo.swift; sourceTree = "<group>"; };
 		C1C31D0A2887F94200912C94 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		C1DD4C62288980A000FAA9BF /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				C12E95C6288921F000AD1417 /* DetailPageViewController.swift */,
 				C1C31D062887F48700912C94 /* BooksCollectionViewController.swift */,
 				C1C31D042887F45D00912C94 /* BooksCollectionViewCell.swift */,
+				C1DD4C62288980A000FAA9BF /* WebViewController.swift */,
 				C1C31D082887F87700912C94 /* BookInfo.swift */,
 				C1C31D0A2887F94200912C94 /* Book.swift */,
 				C1C31CF92887F19B00912C94 /* Assets.xcassets */,
@@ -159,6 +162,7 @@
 				C12E95C7288921F000AD1417 /* DetailPageViewController.swift in Sources */,
 				C1C31CF52887F19A00912C94 /* ViewController.swift in Sources */,
 				C1C31D052887F45D00912C94 /* BooksCollectionViewCell.swift in Sources */,
+				C1DD4C63288980A000FAA9BF /* WebViewController.swift in Sources */,
 				C12E95C92889286D00AD1417 /* SearchViewController.swift in Sources */,
 				C1C31D0B2887F94200912C94 /* Book.swift in Sources */,
 				C1C31CF12887F19A00912C94 /* AppDelegate.swift in Sources */,
